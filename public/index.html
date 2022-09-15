@@ -38,7 +38,12 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/2.0.2/timeago.min.js" integrity="sha512-sl01o/gVwybF1FNzqO4NDRDNPJDupfN0o2+tMm4K2/nr35FjGlxlvXZ6kK6faa9zhXbnfLIXioHnExuwJdlTMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/2.0.2/timeago.min.js"
+      integrity="sha512-sl01o/gVwybF1FNzqO4NDRDNPJDupfN0o2+tMm4K2/nr35FjGlxlvXZ6kK6faa9zhXbnfLIXioHnExuwJdlTMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -59,38 +64,38 @@
     </nav>
 
     <div class="main-container">
-    <header>
-      <div>
-        <img src="/images/profile-hex.png" />
-      </div>
-      <p><b>Jacqline</b> Geng</p>
-    </header>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <div class="warning-flags">
-          <i class="fa-solid fa-triangle-exclamation"></i>
-          <span class="warning"></span>
-          <i class="fa-solid fa-triangle-exclamation"></i>
+      <header>
+        <div>
+          <img src="/images/profile-hex.png" />
         </div>
-        <h2>Tweet Something</h2>
-        <form>
-          <textarea
-          name="text"
-          id="tweet-text"
-          placeholder="What are you humming about?"
-          ></textarea>
-          <div class="tweet-container">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+        <p><b>Jacqline</b> Geng</p>
+      </header>
+
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <div class="warning-flags">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span class="warning"></span>
+            <i class="fa-solid fa-triangle-exclamation"></i>
           </div>
-        </form>
-      </section>
-      <div id="tweets-container">
-      </div>
-    </main>
-  
-  </div>
+          <h2>Tweet Something</h2>
+          <form>
+            <textarea
+              name="text"
+              id="tweet-text"
+              placeholder="What are you humming about?"
+            ></textarea>
+            <div class="tweet-container">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text"
+                >140</output
+              >
+            </div>
+          </form>
+        </section>
+        <div id="tweets-container"></div>
+      </main>
+    </div>
   </body>
 </html>

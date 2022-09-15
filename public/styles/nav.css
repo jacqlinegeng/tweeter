@@ -1,0 +1,39 @@
+.navbar {
+  height: 120px;
+  width: 100%;
+  /* background-color: #4056A1; */
+  color: #FFFFFF;
+  padding: 0em 1.5em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+}
+
+.navbar-logo {
+  font-family: "Bungee";
+}
+
+.navbar-menu {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-menu i {
+  color: #d0b4dc;
+  margin-top: -15px;
+}
+
+.navbar-menu i:hover {
+  margin-top: 0px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    background-color: #4056A1;
+    position: relative;
+  }
+}

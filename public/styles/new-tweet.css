@@ -1,0 +1,40 @@
+main textarea {
+  display:flex;
+  flex-direction: column;
+
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 5px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+::placeholder {
+  padding: 0px 0em;
+  color: rgb(87, 84, 84);
+  opacity: 1;
+  font-weight: bold;
+} 
+
+main button {
+  font-family: "Bungee";
+  color: #FFFFFF;
+  background-color: #4056A1;
+}
+
+.tweet-container {
+  font-family: "Bungee";
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.red-text {
+  color: red;
+}
+
+.new-tweet{
+  width: 90%;
+  margin: 1em auto;
+}

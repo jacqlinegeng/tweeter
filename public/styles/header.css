@@ -1,0 +1,28 @@
+header {
+  /* height: 400px; */
+  width: 100%;
+  padding-top: 150px;
+  color: #FFFFFF;
+  background-color: #6e64bd;
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  font-size: xx-large;
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    background-color: #4056A1;
+  }
+
+  header {
+    width: 40%;
+    height: 70%;
+    margin-left: 50px;
+    padding-top: 150px;
+    border-top-width: 40px;
+    margin-top: 50px;
+  }
+}

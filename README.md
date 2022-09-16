@@ -5,7 +5,7 @@ Tweeter is a simple, single-page Twitter clone.
 The tech stack for this project consists of HTML, CSS, JS, jQuery and AJAX for front-end, and Node, Express for back-end.
 
 ## Final Product
-!["Screenshot of tweet compose box"](https://github.com/jacqlinegeng/tweeter/blob/master/tweet%20compose%20box.png?raw=true)
+!["Screenshot of tweet compose box"](https://github.com/jacqlinegeng/tweeter/blob/master/screenshots/tweet%20compose%20box.png?raw=true)
 !["Screenshot of sample tweets"](https://github.com/jacqlinegeng/tweeter/blob/master/screenshots/sample%20tweets.png?raw=true)
 !["Screenshot of tweeter in tablet mode"](https://github.com/jacqlinegeng/tweeter/blob/master/tweeter%20table%20mode.png?raw=true)
 !["Screenshot of tweeter in desktop mode"](https://github.com/jacqlinegeng/tweeter/blob/master/tweeter%20desktop%20mode.png?raw=true)

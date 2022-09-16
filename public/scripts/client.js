@@ -51,19 +51,22 @@ const loadTweets = function () {
   const url = "/tweets";
   $.ajax(url, { method: "GET" }).then((tweetsFromBackEnd) => {
     $("#tweets-container").empty();
-    console.log("backend data:", tweetsFromBackEnd);
     renderTweets(tweetsFromBackEnd);
   });
 };
 
 $(document).ready(function () {
   loadTweets();
+
+  // warnings are hidden unless triggered
   $(".warning-flags").css("display", "none")
+
+  // submit function for submitting tweets
   $("form").submit(function (event) {
     event.preventDefault();
 
+    // validate input length
     const length = $("#tweet-text").val().length;
-    console.log(length);
     if (!length) {
       $(".warning-flags").slideDown(400, () => {
         $(".warning").text("field cannot be empty!");
@@ -76,6 +79,7 @@ $(document).ready(function () {
     return;
     }
 
+    // warning for tweet over 140 chars
     if (length > 140) {
       $(".warning-flags").slideDown(400, () => {
         $(".warning").text("tweet must be under 140 characters!");
@@ -88,15 +92,18 @@ $(document).ready(function () {
     return;
     }
 
+    // empty input to clear the warnings and reset counter
     $(".warning-flags").text("");
 
+    // parsing data to the post request
     const data = $(this).serialize();
-    console.log(data);
     $.ajax({
       url: `/tweets`,
       method: "POST",
       data: data,
       success: () => {
+        $(".counter").text(140);
+        $("#tweet-text").val("");
         loadTweets();
       },
     });
